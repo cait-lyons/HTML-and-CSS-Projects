@@ -11,8 +11,10 @@ h3 {
     text-align: center;
 }
 
-#image {
+.image {
     border: dashed red;
+    width: 600px;
+    height: 300px;
 }
 
 
