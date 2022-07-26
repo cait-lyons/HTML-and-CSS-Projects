@@ -1,0 +1,437 @@
+/*-------------
+GENERAL STYLES
+-------------*/
+
+html {
+    font-family: sans-serif;
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-size: 14px;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: normal;
+    color: #000033;
+    background-color: #fff;
+}
+
+footer,
+nav {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000033;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+
+h1::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 150px;
+    background: #000033;
+    margin: 5px auto 40px;
+    box-shadow: 5px 2px 3px rgba(0,0,0,0.5);
+}
+
+h2 {
+    line-height: 50px;
+    color: #000033;
+}
+
+h3 {
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+h4 {
+    padding-top: 25px;
+    line-height: 40px;
+    padding-bottom: 0px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.heading-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+section {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+}
+
+.navbar {
+    height: 105px;
+    max-height: 340px;
+    display: inline-block;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.clearfix::after, 
+.container::after,
+.navbar::after {
+    clear: both;
+    display: table;
+    content:"";
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.menu-container {
+    max-height: 340px;
+    margin: 0% auto;
+    content: "";
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+/*-----------------
+HOME SECTION STYLES
+------------------*/
+
+#Home {
+    background: url(../Images/Thumbnail_2.png) no-repeat 50% 50%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: auto;
+    display: block;
+    height: auto;
+    padding-top: 350px;
+    padding-bottom: 350px;
+    background-color: rgb(213, 136, 29);
+}
+
+.head-main {
+    text-shadow: 2px 4px 5px rgba(0,0,0,0.9);
+    font-variant: small-caps;
+    color: #fff;
+    background-color: #000033;
+    letter-spacing: 5pt;
+    word-spacing: 15pt;
+    font-size: 5em;
+    text-align: left;
+    font-family: 'Impact', sans-serif;
+    line-height: 2;
+    font-weight: 900;
+    border: 5px double #fff;
+    padding: 10px;
+}
+
+#introduction {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    color: #000033;
+}
+
+/*---------------------
+SCHEDULE SECTION STYLES
+----------------------*/
+
+#Schedule {
+    background-color: #f5f3f3e1;
+}
+
+.styled-table {
+    border-radius: 25px;
+    background-position: left top;
+    background-repeat: repeat; 
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 22px;
+    font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #000033;
+    color: #ffffff;
+    font: bold;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    border: 1px solid;
+}
+
+.styled-table th {
+    text-align: center;
+    font-weight: bold;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #000033;
+}
+
+.head-sub-main {
+    font-size: 23px;
+    font-weight: 500;
+    padding: 50px 20px 10px 20px;
+    text-transform: uppercase;
+}
+
+.head-last {
+    font-size: 18px;
+    font-weight: 900;
+    padding: 5px 20px 20px 20px;
+    border: 1px dotted #fff;
+    padding: 5px;
+}
+
+/*--------------------
+SIGN-UP SECTION STYLES
+---------------------*/
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: #000033;
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
+}
+
+#Sign-up {
+    background-color: #fff;
+}
+
+.reservation {
+    width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: rgba(185, 134, 40, 0.3);
+    box-shadow: -1px -1px 1px 0 #000033 1px 2px 10px #000033;
+}
+
+.reservation h2 {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    color: #000033;
+    font-weight: 500;
+    font-size: 1.3em;
+    letter-spacing: 0pt;
+    word-spacing: 0pt;
+}
+
+.reservation h2 span {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    color: #000033;
+    font-weight: 900;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    letter-spacing: .4pt;
+    word-spacing: .3pt;
+}
+
+.reservation p {
+    color: #000033;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: large;
+    font-weight: 350;
+    padding-bottom: 1em;
+}
+
+.reservation form {
+    font-size: 15px;
+    outline: none;
+    font-weight: 400;
+    color: #8D8E8F;
+    padding: 12px 12px;
+    width: 80%;
+    border: 1px solid #808080;
+    margin: auto;
+    border-radius: 7px;
+    background: rgb(227,222,222);
+    box-shadow: #000033;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.reservation input[type="text"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #f3f6f9;
+    padding: 1em;
+    width: 80%;
+    border-top: 1px solid #090B0D;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090B0D;
+    margin: 1em 2.5em;
+    border-radius: 7px;
+    background: #000033;
+    box-shadow: inset 0px 3px 0px 0px #000033;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.reservation input[type="text"] {
+    box-shadow: 0 0 18px rgba(100,65,0,0.8);
+}
+
+.form-spacer {
+    padding: 30px 30px;
+}
+
+.submit input[type="submit"] {
+    color: rgb(255,255,255);
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    outline: none;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 1.5em 23.7em 1em;
+    padding: 8px 8px;
+    width: auto;
+    font-size: 15px;
+    transition: border-color 0.3s 0.3s background-color 0.3s;
+    border-radius: 9px;
+    background-color: #000033;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+}
+
+.submit input[type="submit"]:hover {
+    color: #000;
+    background-color: #8D8E8F;
+    box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
+}
+
+/*-------------
+GALLERY STYLES
+--------------*/
+
+#Gallery {
+    background-color: #f5f3f3e1;
+} 
+
+/*-----------
+FOOTER STYLES
+------------*/
+
+#footer {
+    padding-top: 25px;
+    background-color: rgba(100,65,0,.3);
+    color: #000;
+    text-align: center;
+    line-height: 0.5cm;
+    padding-bottom: 10px;
+}
+
+/*------------
+@MEDIA QUERIES
+-------------*/
+
+@media all and (max-width: 640px) and (min-width: 381px) {
+    .head-main {
+        font-size: 28px;
+    }
+}
+
+@media all and (max-width: 381px) and (min-width: 200px) {
+    .head-main {
+        font-size: 24px;;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
