@@ -1,0 +1,345 @@
+/*----------------------
+GENERAL WEBSITE STYLING
+----------------------*/
+body {
+    margin: 0%;
+    line-height: normal;
+    background-color: #E3E3E3;
+    color: black;
+    font-family: 'Asap', sans-serif;
+}
+
+a {
+    color: rgb(53, 53, 213)
+}
+
+section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.clearfix::after, 
+.container::after,
+.navbar::after {
+    clear: both;
+    display: table;
+    content:"";
+}
+
+h1 {
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+h2 {
+    font-weight: 700px;
+    text-transform: uppercase;
+    font-size: 28px;
+    text-shadow: #C60021 1px 0 6px;
+}
+
+/*----------------------
+NAVIGATION BAR STYLING
+----------------------*/
+.Navbar {
+    overflow: hidden;
+    background-color: #E3E3E3;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: moveNav 3s;
+    animation: moveNav 3s;
+  }
+  
+.Navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 3px solid transparent;
+  }
+  
+.Navbar a:hover {
+    border-bottom: 3px solid black;
+    font-weight: 700;
+    color: black
+  }
+  
+.Navbar a.active {
+    border-bottom: 3px solid #C60021;
+  }
+
+.Navbar {
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: moveNav 3s;
+    animation: moveNav 3s;
+}
+
+@keyframes moveNav {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+.Navbar a {
+    float: left;
+    display: block;
+    color: #C60021;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: 'Asap', sans-serif; 
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    position: relative; 
+    -webkit-animation: moveNavText 5s;
+    animation: moveNavText 5s;
+}
+
+@keyframes moveNavText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+@media screen and (max-width: 576px) {
+    .Navbar a{
+        width: 25%;
+        font-size: 12px;
+    }
+}
+
+/*-----------------------
+HOME PAGE SECTION STYLING
+-----------------------*/
+#home{
+    background-color: black;
+    border-bottom: double #C60021;
+}
+
+.typewriter {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 38px;
+    text-align: center;
+    color: #C60021;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.typing {
+    overflow: hidden;
+    border-right: .15em solid #C60021;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+      typing 4s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+ 
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #C60021; }
+  }
+
+/*-------------------
+ABOUT SECTION STYLING
+-------------------*/
+#about {
+    color: black;
+    font-family: 'Asap', sans-serif;
+    font-size: 20px;
+}
+
+.left {
+    text-align: left;
+    font-style: italic;
+    color: #C60021;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Asap', sans-serif;
+    padding-bottom: 2px;;
+}
+
+
+.right {
+    text-align: right;
+    font-style: italic;
+    color: #C60021;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Asap', sans-serif;
+    padding-bottom: 2px;
+}
+
+.tmnt_1 {
+    filter: none;
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    float: none;
+    padding-right: 10px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.tmnt_2 {
+    filter: none;
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+    float: none;
+    padding-right: 10px;
+    display: inline;
+    vertical-align: middle;
+}
+
+/*--------------------
+SKILLS SECTION STYLING
+---------------------*/
+#skills {
+    border-top: double #C60021;
+    color: black;
+    font-family: 'Asap', sans-serif;
+    font-size: 20px;
+}
+
+q {
+    font-style: italic;
+}
+
+.quote{
+    font-size: 22px;
+    font-weight: 600;
+    color: #C60021;
+    text-align: center;
+}
+
+.quote_2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+}
+
+/*-------------------
+CONTACT FORM STYLING
+--------------------*/
+#contact {
+    border-top: double #C60021;
+    color: black;
+    font-family: 'Asap', sans-serif;
+    font-size: 20px;
+}
+
+.reservation {
+    width: 50%;
+    text-align: left;
+    margin: auto;
+    font-size: large;
+    font-weight: 350;
+    padding-bottom: 1em;
+}
+
+.reservation form {
+    align-items: center;
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #E3E3E3;
+    padding: 12px 12px;
+    width: 80%;
+    border: 2px solid #C60021;
+    margin: auto;
+    border-radius: 7px;
+    background: black;
+    font-family: 'Asap', sans-serif;
+}
+
+.reservation input[type="text"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #C60021;
+    padding: 12px 12px;
+    width: 90%;
+    border: 1px solid #C60021;
+    margin: 2%;
+    border-radius: 7px;
+    background: #E3E3E3;
+    font-family: 'Asap', sans-serif;
+}
+
+.reservation input[type="text"] {
+    box-shadow: 0 0 4px #C60021;
+}
+
+.form-spacer {
+    padding: 30px 30px;
+}
+
+.submit input[type="submit"] {
+    color: #E3E3E3;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    outline: none;
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+    margin-left: 65%;
+    padding: 6px 8px;
+    margin-bottom: 10px;
+    width: auto;
+    font-size: 15px;
+    transition: border-color 0.3s 0.3s background-color 0.3s;
+    border-radius: 9px;
+    background-color: #C60021;
+    box-shadow: 1px 1px 4px 0 #f5f3f3e1;
+}
+
+.submit input[type="submit"]:hover {
+    color: #E3E3E3;
+    background-color: black;
+    box-shadow: inset 1px 2px 15px 0 #f5f3f3e1;
+}
+
+/*-----------
+FOOTER STYLES
+------------*/
+
+#footer {
+    border-top: double #C60021;
+    background-color: black;
+    color: #E3E3E3;
+    text-align: center;
+    line-height: 0.1cm;
+    font-size: 14px;
+    font-family: 'Asap', sans-serif;
+}
