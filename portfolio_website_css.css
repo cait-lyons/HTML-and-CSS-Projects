@@ -1,6 +1,10 @@
 /*----------------------
 GENERAL WEBSITE STYLING
 ----------------------*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0%;
     line-height: normal;
@@ -48,9 +52,42 @@ h1 {
 h2 {
     font-weight: 700px;
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 3vw;
     text-shadow: #C60021 1px 0 6px;
 }
+   
+.fade-in-text {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 /*----------------------
 NAVIGATION BAR STYLING
@@ -248,6 +285,69 @@ q {
     color: black;
     text-align: center;
 }
+
+.open-button {
+    font-family: 'Asap', sans-serif;
+    background-color: #C60021;
+    color: #E3E3E3;
+    padding: 6px 8px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: relative;
+    left: 10px;
+    border-radius: 9px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #C60021;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #E3E3E3;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 9px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+  
+.form-container .cancel {
+    background-color: #C60021;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
 
 /*-------------------
 CONTACT FORM STYLING
